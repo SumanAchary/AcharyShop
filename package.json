@@ -1,0 +1,29 @@
+{
+  "name": "acharyshop",
+  "version": "1.0.0",
+  "description": "MERN",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SumanAchary/AcharyShop.git"
+  },
+  "author": "suman_achary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SumanAchary/AcharyShop/issues"
+  },
+  "homepage": "https://github.com/SumanAchary/AcharyShop#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  }
+}
